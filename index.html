@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universidad Tecnológica de Madrid - Plataforma Educativa</title>
+    <link rel="stylesheet" href="../principal/style.css">
+    <script src="./carrito.js"></script>
+
+    
+</head>
+<body>
+
+    <header>
+        <h1>Universidad Tecnológica de Madrid</h1>
+        <p>Plataforma Educativa</p>
+        <ul>
+            <li><a href="../principal/html/acerca.html">Acerca de nosotros</a></li>
+            <li><a href="../principal/html/admisiones.html">Admisiones</a></li>
+            <li><a href="../principal/html/contacto.html">Contacto</a></li>
+        </ul>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#matematicas">Matemáticas</a></li>
+            <li><a href="#programacion">Programación</a></li>
+            <li><a href="#bases_datos">Bases de Datos</a></li>
+            <li><a href="#hardware">Hardware</a></li>
+            <li><a href="#software">Software</a></li>
+            <li><a href="#redes">Redes</a></li>
+            <li><a href="#telecomunicacion">Telecomunicacion</a></li>
+            <li><a href="#grado_informatica">Grado en Informática</a></li>
+            <li><a href="#renovación">Renueve su matricula</a></li>
+            <li><a href="#empresas">Colaboradoras</a></li>
+            <li><a href="#reseñas">Reseñas</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <!-- Cursos -->
+
+        <div id="matematicas" class="curso">
+            <h2>Matemáticas</h2>
+            <img src="../imagenes/1.jpeg" alt="Matemáticas">
+            <p>Explora el mundo de las matemáticas aplicadas. Impartido por el Dr. Martínez.</p>
+            <button onclick="agregarAlCarrito('Matemáticas', 1)">Agregar al Carrito</button>
+        </div>
+
+        <div id="software" class="curso">
+            <h2>Software</h2>
+            <img src="../imagenes/4.jpeg" alt="Software">
+            <p>Explora el mundo de las matemáticas aplicadas. Impartido por el Dr. Martínez.</p>
+            <button onclick="agregarAlCarrito('Software', 1)">Agregar al Carrito</button>
+        </div>
+
+        <div id="hardware" class="curso">
+            <h2>hardware</h2>
+            <img src="../imagenes/5.jpeg" alt="Hardware">
+            <p>conoce el hardware y sus partes, a fondo. Impartido por el Dr. Martínez.</p>
+            <button onclick="agregarAlCarrito('hardware', 1)">Agregar al Carrito</button>
+        </div>
+
+        <div id="programacion" class="curso">
+            <h2>Programación</h2>
+            <img src="../imagenes/8.jpeg" alt="Programación">
+            <p>Aprende los fundamentos de la programación. Impartido por la Dra. García.</p>
+            <button onclick="agregarAlCarrito('Programación', 1)">Agregar al Carrito</button>
+        </div>
+
+        <div id="bases_datos" class="curso">
+            <h2>Bases de Datos</h2>
+            <img src="../imagenes/2.jpeg" alt="Bases de Datos">
+            <p>Descubre el mundo de las bases de datos y su diseño. Impartido por el Prof. Rodríguez.</p>
+            <button onclick="agregarAlCarrito('Bases de Datos', 1)">Agregar al Carrito</button>
+        </div>
+
+        <div id="redes" class="curso">
+            <h2>Redes</h2>
+            <img src="../imagenes/7.jpeg" alt="Redes">
+            <p>Explora la arquitectura y administración de redes. Impartido por la Dra. Fernández.</p>
+            <button onclick="agregarAlCarrito('Redes', 1)">Agregar al Carrito</button>
+        </div>
+
+        <div id="telecomunicacion" class="curso">
+            <h2>Telecomunicacion</h2>
+            <img src="../imagenes/6.jpeg" alt="Telecomunicaciones">
+            <p>Aprende sobre el diseño y análisis de las telecomunicaciones. Impartido por el Dr. Pérez.</p>
+            <button onclick="agregarAlCarrito('telecomunicacion', 1)">Agregar al Carrito</button>
+        </div>
+
+        <!-- Informacion -->
+
+        <section id="Grado informática">
+            <h2>Grado en Informática</h2>
+            <p>El Grado en Informática de la UTM proporciona a los estudiantes los conocimientos y habilidades necesarios...
+            </p>
+           <p>Al completar nuestros 7 cursos conseguiras nuestro titulo propio en el grado de Informatica, pincha en admisiones para más información</p>
+           
+            <img src="../imagenes/8.jpeg" alt="Aula de Informática">
+        </section>
+
+<!-- Formulario Matriculados -->
+<section id="renovación">
+    <h2>Estudiantes Matriculados</h2>
+    <p>Complete el siguiente formulario si ya está matriculado en nuestra universidad. Al Completar este fomulario se inscribirá para su siguiente curso y continuará su matriculación</p>
+
+    <form action="procesar_matriculados.php" method="post">
+        <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required><br>
+
+    <label for="edad">Edad:</label>
+    <input type="number" id="edad" name="edad" required><br>
+
+    <label for="genero">Género:</label>
+    <select id="genero" name="genero" required>
+        <option value="Masculino">Masculino</option>
+        <option value="Femenino">Femenino</option>
+        <option value="Otro">Otro</option>
+    </select><br>
+
+
+       <button type="submit">Enviar Matrícula</button>
+    </form>
+</section>
+
+        <!-- Empresas-->
+
+        <section id="empresas">
+            <h2>Empresas Colaboradoras</h2>
+            <p>Nuestra universidad colabora estrechamente con diversas empresas del sector de la informática para proporcionar a nuestros estudiantes...</p>
+            <img src="../imagenes/10.jpeg" alt="Empresas Colaboradoras">
+            <div class="empresa">
+                <img src="../imagenes/ABC.jpeg" alt="Logo Empresa 1">
+                <p>ABC Solutions</p>
+            </div>
+        
+            <div class="empresa">
+                <img src="../imagenes/TECH.jpeg" alt="Logo Empresa 2">
+                <p>Techno Innovations</p>
+            </div>
+        
+            <div class="empresa">
+                <img src="../imagenes/Q.jpeg" alt="Logo Empresa 5">
+                <p>Quantum Technologies</p>
+            </div>
+            <div style="clear: both;"></div>
+        </section>
+
+        <!-- Reseñas-->
+
+        <section id="reseñas">
+            <h2>Reseñas de Estudiantes</h2>
+            <p>Descubre lo que dicen nuestros antiguos estudiantes sobre su experiencia en la UTM.</p>
+            <div class="reseña">
+                <h3>María Rodríguez</h3>
+                <p>"Estudiar en la UTM fue una experiencia increíble. Los profesores son apasionados y comprometidos, y el ambiente académico fomenta el aprendizaje. Además, las instalaciones son modernas y propicias para el desarrollo integral. ¡Recomiendo la UTM a todos los que buscan una educación de calidad!"</p>
+            </div>
+        
+            <div class="reseña">
+                <h3>Javier López</h3>
+                <p>"La UTM me brindó las herramientas necesarias para enfrentar los retos del mundo laboral. Los proyectos prácticos y el enfoque en habilidades prácticas hicieron que mi aprendizaje fuera significativo. Además, la comunidad estudiantil es diversa y colaborativa. ¡Estoy agradecido por mi tiempo en la UTM!"</p>
+            </div>
+        </section>
+
+        <!-- Carrito -->
+
+        <div id="carrito" class="carrito">
+            <h2>Carrito de Compras</h2>
+            <ul id="lista-carrito"></ul>
+            <button onclick="comprarCursos()">Comprar</button>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>© 2023 Universidad Tecnológica de Madrid. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra - Universidad Tecnológica de Madrid</title>
+    <link rel="stylesheet" href="../style.css">
+   
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="..//index.html">Inicio</a></li>
+                <li><a href="../html/acerca.html">Acerca de nosotros</a></li>
+                <li><a href="../html/admisiones.html">Admisiones</a></li>
+                <li><a href="../html/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="total-compra">
+            <h1>Total de la Compra</h1>
+            <p>Gracias por tu compra. A continuación, se muestra el resumen de los cursos adquiridos:</p>
+            
+            <ul id="lista-carrito-total"></ul>
+            
+            
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2023 Universidad Tecnológica de Madrid. Todos los derechos reservados.</p>
+    </footer>
+
+  
+    <script src="carrito.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            mostrarTotalCompra();
+        });
+
+        function mostrarTotalCompra() {
+            const listaCarritoTotal = document.getElementById('lista-carrito-total');
+            carrito.forEach(curso => {
+                const li = document.createElement('li');
+                li.textContent = curso;
+                listaCarritoTotal.appendChild(li);
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Universidad Tecnológica de Madrid</title>
+    <link rel="stylesheet" href="../style.css">
+    >
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../html/acerca.html">Acerca de nosotros</a></li>
+                <li><a href="../html/admisiones.html">Admisiones</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="formulario-contacto">
+            <h1>Contacto</h1>
+            <p>Por favor, complete el siguiente formulario y nos pondremos en contacto con usted.</p>
+
+            <form action="../procesar_formulario.php" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+
+                <label for="telefono">Número de teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+
+                <label for="preguntas">Preguntas o comentarios:</label>
+                <textarea id="preguntas" name="preguntas" rows="4" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+        <form action="../procesar_formulario.php" method="post">
+
+    </main>
+
+    <footer>
+        <p>© 2023 Universidad Tecnológica de Madrid. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
